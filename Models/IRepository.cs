@@ -5,6 +5,8 @@ namespace SportsStore.Models
     public interface IRepository
     {
         IEnumerable <Product> Products { get; }
-    void AddProduct(Product product);
+        Product GetProduct(long key);
+        void AddProduct(Product product);
+        void UpdateProduct(Product product);
     }
 }
